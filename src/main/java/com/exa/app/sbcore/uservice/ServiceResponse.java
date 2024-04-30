@@ -1,11 +1,11 @@
 package com.exa.app.sbcore.uservice;
 
 public class ServiceResponse<T> {
-	private String message;
+	private final String message;
 	
-	private T finalResponse;
+	private final T finalResponse;
 	
-	private String details;
+	private final String details;
 	
 	public ServiceResponse(T finalResponse, String message, String details) {
 		super();
@@ -30,26 +30,12 @@ public class ServiceResponse<T> {
 		return message;
 	}
 
-	public void setMessage(String message) {
-		this.message = message;
-	}
-
 	public T getFinalResponse() {
 		return finalResponse;
-	}
-
-	public void setFinalResponse(T finalResponse) {
-		this.finalResponse = finalResponse;
 	}
 
 	public String getDetails() {
 		return details;
 	}
-
-	public void setDetails(String details) {
-		this.details = details;
-	}
-	
-	
 
 }
