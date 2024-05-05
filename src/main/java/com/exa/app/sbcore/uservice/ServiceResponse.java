@@ -37,5 +37,17 @@ public class ServiceResponse<T> {
 	public String getDetails() {
 		return details;
 	}
+	
+	public static <T>ServiceResponse<T>  messageFrom(ServiceResponse<?> sr) {
+		return new ServiceResponse<T>(null, sr.getMessage(), sr.getDetails());
+	}
+	
+	public static <T>ServiceResponse<T>  messageFrom(String message, String details) {
+		return new ServiceResponse<T>(null, message, details);
+	}
+	
+	public static <T>ServiceResponse<T>  messageFrom(String message) {
+		return messageFrom(message, null);
+	}
 
 }
