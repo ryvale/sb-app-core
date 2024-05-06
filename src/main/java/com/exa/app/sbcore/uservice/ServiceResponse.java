@@ -1,11 +1,19 @@
 package com.exa.app.sbcore.uservice;
 
 public class ServiceResponse<T> {
+	
+	public final static ServiceResponse<Boolean> SR_TRUE = new ServiceResponse<>(Boolean.TRUE);
+	
+	public final static ServiceResponse<Boolean> SR_FALSE = new ServiceResponse<>(Boolean.FALSE);
+	
+	
 	private final String message;
 	
 	private final T finalResponse;
 	
 	private final String details;
+	
+	
 	
 	public ServiceResponse(T finalResponse, String message, String details) {
 		super();
@@ -49,5 +57,6 @@ public class ServiceResponse<T> {
 	public static <T>ServiceResponse<T>  messageFrom(String message) {
 		return messageFrom(message, null);
 	}
+
 
 }
