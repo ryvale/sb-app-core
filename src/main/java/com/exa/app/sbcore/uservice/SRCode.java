@@ -2,6 +2,8 @@ package com.exa.app.sbcore.uservice;
 
 public class SRCode {
 	
+	public static final String CR = "CR/";
+	
 	public static final String BR = "BR/";
 	
 	public static final String UE = "UE/";
@@ -9,6 +11,8 @@ public class SRCode {
 	public static final String CF = "CF/";
 	
 	public static final String UA = "UA/";
+	
+	public static final String FB = "FB/";
 	
 	public static final String AC = "AC/";
 	
