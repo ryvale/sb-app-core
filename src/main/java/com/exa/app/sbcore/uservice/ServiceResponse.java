@@ -43,8 +43,12 @@ public class ServiceResponse<T> {
 		return srLogMessage(errMessage, null, logMessage, log, params);
 	}
 	
-	public static <T>ServiceResponse<T> srLogMessage(String errMessage, String errDetails, String header, String logMessage, Logger log,  Object ...params) {
+	public static <T>ServiceResponse<T> srLogHeaderMessage(String errMessage, String errDetails, String header, String logMessage, Logger log,  Object ...params) {
 		return srLogMessage(errMessage, errDetails, header + ":" +logMessage, log, params);
+	}
+	
+	public static <T>ServiceResponse<T> srLogHeaderMessage(String errMessage, String header, String logMessage, Logger log,  Object ...params) {
+		return srLogMessage(errMessage, null, header + ":" +logMessage, log, params);
 	}
 	
 	
