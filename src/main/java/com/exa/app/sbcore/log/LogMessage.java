@@ -12,6 +12,8 @@ public class LogMessage {
 	
 	public final static String CLIENT_ERROR = "CLIENT-ERROR";
 	
+	public final static String BUG_BAD_INIT = "BUG-BAD-INIT";
+	
 	public final static String BUG_FATAL_ERROR = "BUG-FATAL-ERROR";
 	
 	public final static String BUG_MODEL = "BUG-MODEL";
