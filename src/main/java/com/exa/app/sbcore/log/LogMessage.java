@@ -10,6 +10,8 @@ public class LogMessage {
 	
 	public final static String BUG_BAD_INIT = "BUG-BAD-INIT";
 	
+	public final static String BUG_BAD_CONFIG = "BUG-BAD-CONFIG";
+	
 	public final static String BUG_MODEL = "BUG-MODEL";
 
 	public final static String BUG_CLIENT = "BUG-CLIENT";
